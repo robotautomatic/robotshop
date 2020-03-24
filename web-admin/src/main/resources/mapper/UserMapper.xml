@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<mapper namespace="com.robotautomatic.robotshop.admin.dao.IUserDao">
+    <!-- statement，内容：sql语句。id：唯一标识，随便写，在同一个命名空间下保持唯一
+       resultType：sql语句查询结果集的封装类型,tb_user即为数据库中的表
+     -->
+    <cache eviction="FIFO" flushInterval="6000" readOnly="true"/>
+
+    <select id="getUserById" resultType="com.robotautomatic.robotshop.domain.User">
+      select * from tb_user where user_id = #{userId}
+    </select>
+
+    <select id="getUserByName" resultType="com.robotautomatic.robotshop.domain.User">
+      select * from tb_user where user_name = #{username}
+    </select>
+
+    <select id="getAllUser" resultType="com.robotautomatic.robotshop.domain.User">
+      select * from tb_user
+    </select>
+
+    <select id="login" resultType="com.robotautomatic.robotshop.domain.User">
+      select * from tb_user where user_name = #{param1} and user_password = #{param2}
+    </select>
+
+    <insert id="addUser" parameterType="com.robotautomatic.robotshop.domain.User" useGeneratedKeys="true" keyProperty="id">
+    insert into tb_user ( user_name, user_password, user_phone, user_email, user_qq, user_created, user_updated)
+    VALUES (#{userName}, #{userPassword}, #{userPhone}, #{userEmail}, #{userQQ}, sysdate(), sysdate())
+    </insert>
+
+    <update id="updateUser" parameterType="com.robotautomatic.robotshop.domain.User">
+    update tb_user set
+    user_name=#{userName},user_password=#{userPassword},user_phone=#{userPhone},user_email=#{userEmail},user_qq=#{userQQ},user_updated=sysdate()
+    where user_id=#{userId}
+    </update>
+
+    <delete id="deleteUser" parameterType="com.robotautomatic.robotshop.domain.User">
+        delete from tb_user where user_id=#{userId}
+    </delete>
+
+    <select id="search" resultType="com.robotautomatic.robotshop.domain.User">
+      select * from tb_user
+      <where>
+          <if test="userName != null and userName !=''">
+              or user_name like concat ("%",#{userName},"%")
+          </if>
+          <if test="userPhone != null and userPhone !=''">
+              or user_phone like concat ("%",#{userPhone},"%")
+          </if>
+          <if test="userEmail != null and userEmail !=''">
+              or user_email like concat ("%",#{userEmail},"%")
+          </if>
+          <if test="userQQ != null and userQQ !=''">
+              or user_qq like concat ("%",#{userQQ},"%")
+          </if>
+      </where>
+    </select>
+
+    <delete id="deleteMulti">
+        DELETE FROM tb_user
+        WHERE user_id IN
+        <foreach collection="array" open="(" close=")" separator="," item="id">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="page" resultType="com.robotautomatic.robotshop.domain.User" parameterType="java.util.Map">
+        SELECT
+        *
+        FROM
+        tb_user AS a
+        <where>
+            <if test="user_Name != null and user_Name != ''" >
+                AND a.user_name LIKE CONCAT ('%', #{user_Name}, '%')
+            </if>
+            <if test="user_Phone != null and user_Phone != ''" >
+                AND a.user_phone LIKE CONCAT ('%', #{user_Phone}, '%')
+            </if>
+            <if test="user_Email != null and user_Email != ''" >
+                AND user_email LIKE CONCAT ('%', #{user_Email}, '%')
+            </if>
+        </where>
+        ORDER BY a.user_Id ASC
+        LIMIT #{start}, #{length}
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM tb_user AS a
+        <where>
+            <if test="username != null and username != ''" >
+                AND a.user_name LIKE CONCAT ('%', #{username}, '%')
+            </if>
+            <if test="phone != null and phone != ''" >
+                AND a.user_phone LIKE CONCAT ('%', #{phone}, '%')
+            </if>
+            <if test="email != null and email != ''" >
+                AND a.user_email LIKE CONCAT ('%', #{email}, '%')
+            </if>
+        </where>
+    </select>
+
+
+
+
+</mapper>
