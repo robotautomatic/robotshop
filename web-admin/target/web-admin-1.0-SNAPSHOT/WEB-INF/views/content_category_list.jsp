@@ -64,7 +64,7 @@
                                             <tr>
                                                 <th>
                                                     <button type="button" class="btn btn-sm btn-default"
-                                                            onclick="window.location.href='user_form'"><i
+                                                            onclick="window.location.href='/content/category/form'"><i
                                                             class="fa fa-plus"></i> 添加
                                                     </button>&nbsp;
                                                 </th>

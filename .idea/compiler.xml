@@ -7,9 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="commons" />
-        <module name="domain" />
         <module name="web-admin" />
+        <module name="domain" />
+        <module name="commons" />
         <module name="web-api" />
         <module name="web-ui" />
       </profile>

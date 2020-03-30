@@ -20,10 +20,17 @@
     <link rel="stylesheet" href="static/assets/css/adminlte.min.css">
     <!-- icheck bootstrap -->
     <link rel="stylesheet" href="/static/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <%--Font Awesome 4.7.0--%>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <%--看板娘--%>
+    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 </head>
 <!-- ./Head End -->
 
 <body class="hold-transition login-page">
+<%--
+<script type="text/javascript" src="/static/assets/js/mouse.js" opacity= 0.6></script>--%>
 <div class="login-box">
     <div class="login-logo">
         <a href="#">我的商城</a>
@@ -92,5 +99,7 @@
         });
     });
 </script>--%>
+
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="/static/assets/js/canvas-nest.js/dist/canvas-nest.js"></script>
 </body>
 </html>

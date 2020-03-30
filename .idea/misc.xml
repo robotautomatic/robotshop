@@ -6,6 +6,9 @@
     <file type="web" url="file://$PROJECT_DIR$/web-api" />
     <file type="web" url="file://$PROJECT_DIR$/web-ui" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES5" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
