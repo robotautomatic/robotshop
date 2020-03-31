@@ -7,19 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4012f222-5b8a-4524-9291-f3daca27b000" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/src/main/resources/robotshop.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/resources/robotshop.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/content_category_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/content_category_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/src/main/java/com/robotautomatic/robotshop/admin/service/Impl/TbContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/java/com/robotautomatic/robotshop/admin/service/Impl/TbContentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/includes/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/includes/sidebar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/content_form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/content_form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/content_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/webapp/WEB-INF/views/content_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-admin/src/main/webapp/static/assets/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/src/main/webapp/static/assets/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/target/classes/robotshop.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/classes/robotshop.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/classes/robotshop.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/classes/robotshop.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/content_category_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/content_category_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/target/classes/com/robotautomatic/robotshop/admin/service/Impl/TbContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/classes/com/robotautomatic/robotshop/admin/service/Impl/TbContentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/classes/com/robotautomatic/robotshop/admin/service/Impl/TbContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/classes/com/robotautomatic/robotshop/admin/service/Impl/TbContentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/includes/sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/includes/sidebar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/content_form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/content_form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/content_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/WEB-INF/views/content_list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/static/assets/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-admin/target/web-admin-1.0-SNAPSHOT/static/assets/app/app.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,23 +133,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\IdeaProjects\robotshop\web-admin\src\main\webapp\static\assets\js" />
-      <recent name="D:\ideaProject\robotshop\web-admin\src\main\webapp\static\assets\app" />
-      <recent name="D:\ideaProject\robotshop\web-admin\src\main\webapp\static\assets" />
-      <recent name="D:\mygit\robotshop\web-admin\src\main\webapp\static" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.funtl.my.shop.commons.validator" />
-      <recent name="com.funtl.my.shop.commons.dto" />
-      <recent name="com.robotautomatic.robotshop.admin.web.interceptor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\IdeaProjects\robotshop\web-admin\src\main\webapp\static\assets\plugins" />
       <recent name="D:\ideaProject\robotshop\web-admin\src\main\webapp\static\assets\app" />
       <recent name="D:\ideaProject\robotshop\web-admin\src\main\java\com\robotautomatic\robotshop\admin\web\controllar" />
       <recent name="D:\ideaProject\robotshop\web-admin\src\main\java\com\robotautomatic\robotshop\admin\abstracts" />
       <recent name="D:\ideaProject\robotshop\web-admin\src\main\webapp\static\assets\plugins" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.funtl.my.shop.commons.validator" />
+      <recent name="com.funtl.my.shop.commons.dto" />
+      <recent name="com.robotautomatic.robotshop.admin.web.interceptor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\IdeaProjects\robotshop\web-admin\src\main\webapp\static\assets\js" />
+      <recent name="D:\ideaProject\robotshop\web-admin\src\main\webapp\static\assets\app" />
+      <recent name="D:\ideaProject\robotshop\web-admin\src\main\webapp\static\assets" />
+      <recent name="D:\mygit\robotshop\web-admin\src\main\webapp\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,7 +401,9 @@
       <workItem from="1584939233639" duration="23385000" />
       <workItem from="1585187077761" duration="25967000" />
       <workItem from="1585528791119" duration="8137000" />
-      <workItem from="1585555220134" duration="837000" />
+      <workItem from="1585555220134" duration="3850000" />
+      <workItem from="1585617875553" duration="12000" />
+      <workItem from="1585617894671" duration="15228000" />
     </task>
     <servers />
   </component>

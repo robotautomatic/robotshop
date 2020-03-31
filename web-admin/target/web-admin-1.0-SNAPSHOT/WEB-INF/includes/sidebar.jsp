@@ -8,6 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="uri" value="${requestScope['javax.servlet.forward.request_uri']}" />
+
+<script language="JavaScript">
+    function testReg(arg){
+        var uri = "${requestScope['javax.servlet.forward.request_uri']}";
+        var v = arg;
+        var reg =new RegExp(v + "*","gim");
+        var res = reg.test(uri);
+        alert(res);
+        return res;
+    }
+</script>
+
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
@@ -69,8 +81,8 @@
                         </li>
                     </ul>
                     <ul class="nav nav-treeview" >
-                        <li class="nav-item has-treeview ${((uri == "/content/category/list") or (uri == "/content/list")) ? "menu-open" : "menu-close"}">
-                            <a href="#" class="nav-link ${((uri == "/content/category/list") or (uri == "/content/list")) ? "active" : ""}">
+                        <li class="nav-item has-treeview ${((uri == "/content/category/list") or (uri == "/content/list") or (uri == "/content/category/form") or (uri == "/content/form")) ? "menu-open" : "menu-close"}">
+                            <a href="#" class="nav-link ${((uri == "/content/category/list") or (uri == "/content/list") or (uri == "/content/category/form") or (uri == "/content/form")) ? "active" : ""}">
                                 &nbsp;&nbsp;<i class="far fa-circle nav-icon"></i>
                                 <p>
                                     内容管理
@@ -79,13 +91,13 @@
                             </a>
                             <ul class="nav nav-treeview" >
                                 <li class="nav-item">
-                                    <a href="/content/category/list" class="nav-link ${uri == "/content/category/list" ? "active" : ""} ">
+                                    <a href="/content/category/list" class="nav-link ${uri == "/content/category/list" or uri == "/content/category/form" ? "active" : ""} ">
                                         &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-dot-circle nav-icon"></i>
                                         <p>内容分类</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/content/list" class="nav-link ${uri == "/content/list" ? "active" : ""} ">
+                                    <a href="/content/list" class="nav-link ${uri == "/content/list" or uri == "/content/form" ? "active" : ""} ">
                                         &nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-dot-circle nav-icon"></i>
                                         <p>内容列表</p>
                                     </a>

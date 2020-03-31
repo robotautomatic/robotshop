@@ -17,7 +17,7 @@ public class TbContentServiceImpl extends AbstractBaseServiceImpl<TbContent, TbC
 
     @Override
     @Transactional(readOnly = false)
-    public BaseResult save(TbContent tbContent) {
+    public BaseResult save(TbContent tbContent) {/*
         String validator = BeanValidator.validator(tbContent);
 
         // 验证不通过
@@ -26,7 +26,7 @@ public class TbContentServiceImpl extends AbstractBaseServiceImpl<TbContent, TbC
         }
 
         // 验证通过
-        else {
+        else {*/
             tbContent.setUpdated(new Date());
 
             // 新增
@@ -41,8 +41,8 @@ public class TbContentServiceImpl extends AbstractBaseServiceImpl<TbContent, TbC
                 update(tbContent);
             }
 
-            return BaseResult.success("保存内容信息成功");
-        }
+            return BaseResult.success("保存内容信息成功");/*
+        }*/
     }
 
     @Override

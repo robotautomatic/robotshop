@@ -223,7 +223,7 @@
             },
             {
                 "data": function (row, type, val, meta) {
-                    if (row.pic == null) {
+                    if (row.pic == null || row.pic == '') {
                         return '';
                     }
 
@@ -232,7 +232,7 @@
             },
             {
                 "data": function (row, type, val, meta) {
-                    if (row.pic2 == null) {
+                    if (row.pic2 == null || row.pic2 == '') {
                         return '';
                     }
 
